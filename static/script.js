@@ -1,4 +1,8 @@
 
+function goToHome(){
+  window.open("index.html", "_self");
+}
+
 function goToGumroad(){
    window.open("https://kuyagibz.gumroad.com","_blank");
 }
