@@ -11,6 +11,11 @@ function goToInstagram(){
    window.open("https://www.instagram.com/kuyagibz");
 }
 
+function goToPaypalSupport(){
+
+  window.open("https://paypal.me/kuyagibz02");
+}
+
 
 
 function showSection(sectionId) {
