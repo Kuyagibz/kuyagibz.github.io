@@ -6,7 +6,7 @@ body {
   width: 100vw;
   position: relative;
   /* parent anchor */
-  overflow: scroll;
+  overflow: hidden;
   /* keeps video inside */
   background: url("body_Background.png");
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -67,7 +67,7 @@ body video {
   margin: 0 auto;
   border-radius: 25px;
   background-color: rgba(95, 95, 95, 0.29);
-
+  padding:10px;
   backdrop-filter: blur(10px);
   /* frosted blur */
   -webkit-backdrop-filter: blur(10px);
@@ -83,19 +83,21 @@ body video {
 
 .aboutClose-Button{
   position:absolute;
-  width:20px;
-  height: 20px;
+  width:27px;
+  height: 27px;
   top:10px;
-  right:15px;
+  right:20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   
 }
 
 .aboutClose-Button:hover{
   position:absolute;
-  width:20px;
-  height: 20px;
+  width:27px;
+  height: 27px;
   top:10px;
-  right:15px;
   border:1px solid white;
   border-radius: 8px;
   background-color: rgba(255, 0, 0, 0.577);
@@ -127,11 +129,6 @@ body video {
   height: 50px;
   margin: 0;
   padding: 0;
-
-
-
-
-
 
 }
 
@@ -171,6 +168,19 @@ body video {
   height: 100%;
 }
 
+#nav-BuyMeCoffee{
+  background-color:orange;
+  border-radius: 15px;
+  width:100px;
+  color:rgb(0, 0, 0);
+  font-size:20px;
+
+}
+
+#nav-BuyMeCoffee:hover{
+  background-color:rgba(122, 122, 253, 0.532);
+  color:white;
+}
 
 .cta-button {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -187,7 +197,7 @@ body video {
 }
 
 .cta-button:hover {
-  background-color: blue;
+  background-color: rgba(0, 0, 255, 0.335);
   color: white;
   cursor: pointer;
   border-left: 3px ridge white;
@@ -237,15 +247,18 @@ body video {
 
 .about {
   position: relative;
+  position: absolute;
   z-index: 2;
   color: #fff;
   text-align: center;
-  top: 330px;
-  
-  transform: translateY(-50%);
-  width: 90%;
+  font-size: 24px;
+  overflow: scroll;
+  /* transform: translateY(-50%); */
+  height: 90vh;
+  width: 100vw;
   margin: 0 auto;
-  border-radius: 25px;
+  padding:10px;
+  /* border-radius: 25px; */
   background-color: rgba(95, 95, 95, 0.29);
 
   backdrop-filter: blur(10px);
@@ -274,6 +287,7 @@ html {
     justify-content: center;
     /* center items */
     padding: 10px;
+    position:static;
   }
 
   .navi-Menu {
@@ -304,14 +318,19 @@ html {
     width: 90%;
     /* shrink content box */
     font-size: 0.9rem;
-    /* margin-top: 30%; */
+    margin-top: 200px;
+    position: static;
   }
 
   .about {
-    width: 90%;
+    
     /* shrink content box */
     font-size: 0.9rem;
     /* margin-top: 40%; */
+  }
+
+  body{
+    overflow: scroll;
   }
 
   
@@ -357,6 +376,13 @@ html {
   opacity: 1;
   transition: opacity 0.6s ease-in-out; /* smooth fade */
 }
+
+@media (max-wdth:485px){
+  .content{
+    margin-top:100px;
+  }
+}
+
 
 @media (max-width:376px) {
   .navi-Box{
