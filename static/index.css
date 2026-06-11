@@ -6,7 +6,7 @@ body {
   width: 100vw;
   position: relative;
   /* parent anchor */
-  overflow: hidden;
+  overflow: scroll;
   /* keeps video inside */
   background: url("body_Background.png");
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -361,6 +361,10 @@ html {
 
     margin-left: 10px;
 
+  }
+
+  .navi-Menu{
+    margin-right:0;
   }
 
 }
