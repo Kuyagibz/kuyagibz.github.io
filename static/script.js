@@ -21,9 +21,14 @@ function goToPaypalSupport(){
 }
 
 
+function goToProject(){
+  window.location("project.html");
+}
+
+
 
 function showSection(sectionId) {
-  const sections = document.querySelectorAll('.content, .about');
+  const sections = document.querySelectorAll('.content, .about,.project');
 
   sections.forEach(sec => {
     if (sec.id === sectionId) {
