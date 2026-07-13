@@ -10,7 +10,7 @@ body {
   /* keeps video inside */
   background: url("body_Background.png");
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  position:relative;
+  position: relative;
 }
 
 body video {
@@ -47,8 +47,6 @@ body video {
 .brand-Logo {
 
   position: absolute;
-
-
   margin-left: 15px;
   margin-top: 5px;
   z-index: 3;
@@ -61,13 +59,13 @@ body video {
   z-index: 2;
   color: #fff;
   text-align: center;
-  top:300px;
+  top: 300px;
   transform: translateY(-50%);
   width: 40%;
   margin: 0 auto;
   border-radius: 25px;
   background-color: rgba(95, 95, 95, 0.29);
-  padding:10px;
+  padding: 10px;
   backdrop-filter: blur(10px);
   /* frosted blur */
   -webkit-backdrop-filter: blur(10px);
@@ -78,27 +76,27 @@ body video {
   /* subtle border */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   /* soft shadow */
-  
+
 }
 
-.aboutClose-Button{
-  position:absolute;
-  width:27px;
+.aboutClose-Button {
+  position: absolute;
+  width: 27px;
   height: 27px;
-  top:10px;
-  right:20px;
-  display:flex;
+  top: 10px;
+  right: 20px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
-.aboutClose-Button:hover{
-  position:absolute;
-  width:27px;
+.aboutClose-Button:hover {
+  position: absolute;
+  width: 27px;
   height: 27px;
-  top:10px;
-  border:1px solid white;
+  top: 10px;
+  border: 1px solid white;
   border-radius: 8px;
   background-color: rgba(255, 0, 0, 0.577);
   cursor: pointer;
@@ -108,7 +106,7 @@ body video {
 
 
 .navi-Box {
-  /* position: absolute; */
+
   height: 70px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.767);
@@ -168,18 +166,22 @@ body video {
   height: 100%;
 }
 
-#nav-BuyMeCoffee{
-  background-color:orange;
+
+
+#nav-BuyMeDrink {
+  background-color: orange;
   border-radius: 15px;
-  width:100px;
-  color:rgb(0, 0, 0);
-  font-size:120%;
+  width: 100px;
+  color: rgb(0, 0, 0);
+  font-size: 120%;
 
 }
 
-#nav-BuyMeCoffee:hover{
-  background-color:rgba(122, 122, 253, 0.532);
-  color:white;
+
+
+#nav-BuyMeDrink:hover {
+  background-color: rgba(122, 122, 253, 0.532);
+  color: white;
 }
 
 .cta-button {
@@ -187,13 +189,13 @@ body video {
   background-color: rgb(255, 166, 0);
   border-radius: 5px;
   height: 40px;
-  width:120px;
+  width: 120px;
   font-size: 18px;
-  margin:0 auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  color:black;
+  color: black;
 }
 
 .cta-button:hover {
@@ -201,12 +203,12 @@ body video {
   color: white;
   cursor: pointer;
   border-left: 3px ridge white;
-  border-right:3px ridge white;
+  border-right: 3px ridge white;
   font-size: 20px;
   transition: .3s;
   border-radius: 15px;
   height: 50px;
-  width:125px;
+  width: 125px;
 }
 
 
@@ -215,23 +217,23 @@ body video {
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   height: 45px;
-  width:240px;
+  width: 240px;
   font-size: 18px;
-  margin:0 auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  color:black;
+  color: black;
 }
 
 .payPal-Button:hover {
-  
+
   background-color: rgb(199, 199, 199);
   cursor: pointer;
-  border:2px solid black;
+  border: 2px solid black;
   font-size: 20px;
   transition: .3s;
-  
+
 }
 
 .yt_Logo:hover {
@@ -259,7 +261,7 @@ body video {
   height: 90vh;
   width: 100vw;
   margin: 0 auto;
-  padding:10px;
+  padding: 10px;
   /* border-radius: 25px; */
   background-color: rgba(95, 95, 95, 0.29);
 
@@ -275,21 +277,79 @@ body video {
   /* soft shadow */
 }
 
+
+
+
+
+
 html {
-  scroll-behavior: smooth; /* smooth scroll to About */
+  scroll-behavior: smooth;
+  /* smooth scroll to About */
+}
+
+/**Project Section properties**/
+.project {
+  position: relative;
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  overflow: scroll;
+  /* transform: translateY(-50%); */
+  height: 90vh;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 10px;
+  /* border-radius: 25px; */
+  background-color: rgba(95, 95, 95, 0.29);
+
+  backdrop-filter: blur(10px);
+  /* frosted blur */
+  -webkit-backdrop-filter: blur(10px);
+  /* Safari support */
+  border-left: 3px ridge orange;
+  /* subtle border */
+  border-right: 3px ridge blue;
+  /* subtle border */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* soft shadow */
+}
+
+.coverBoxMain {
+  width: 80%;
+  margin:0 auto;
+  margin-top: -5px;
+}
+
+
+.coverBox {
+
+  width: 100%;
 }
 
 
 
 
-@media (max-width:570px) {
+
+
+
+
+
+
+
+@media (max-width:720px) {
+
+
+
+
   .navi-Box {
     height: auto;
     /* allow flexible height */
     justify-content: center;
     /* center items */
     padding: 10px;
-    position:static;
+    position: static;
   }
 
   .navi-Menu {
@@ -325,17 +385,17 @@ html {
   }
 
   .about {
-    
+
     /* shrink content box */
     font-size: 0.9rem;
     /* margin-top: 40%; */
   }
 
-  body{
+  body {
     overflow: scroll;
   }
 
-  
+
 
   body video {
     object-fit: contain;
@@ -363,8 +423,8 @@ html {
 
   }
 
-  .navi-Menu{
-    margin-right:0;
+  .navi-Menu {
+    margin-right: 0;
   }
 
 }
@@ -372,7 +432,8 @@ html {
 
 
 .hidden {
-  display: none; /* hides inactive section */
+  display: none;
+  /* hides inactive section */
   opacity: 0;
 }
 
@@ -380,48 +441,50 @@ html {
 .visible {
   display: block;
   opacity: 1;
-  transition: opacity 0.6s ease-in-out; /* smooth fade */
+  transition: opacity 0.6s ease-in-out;
+  /* smooth fade */
 }
 
-@media (max-wdth:485px){
-  .content{
-    margin-top:100px;
+@media (max-wdth:485px) {
+  .content {
+    margin-top: 100px;
   }
 }
 
 
 @media (max-width:376px) {
-  .navi-Box{
-    position:static;
-  }
-  .content {
+  .navi-Box {
     position: static;
-    margin-top:200px;
   }
 
-  body{
+  .content {
+    position: static;
+    margin-top: 200px;
+  }
+
+  body {
     overflow: scroll;
   }
 
 
-  
+
 }
 
 
 @media (max-width:300px) {
 
-  .navi-Box{
-    position:static;
-  }
-  .content {
+  .navi-Box {
     position: static;
-    margin-top:200px;
   }
 
-  body{
+  .content {
+    position: static;
+    margin-top: 200px;
+  }
+
+  body {
     overflow: scroll;
   }
 
-  
-}
 
+}
