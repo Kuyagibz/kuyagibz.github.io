@@ -88,7 +88,7 @@ body video {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
 }
 
 .aboutClose-Button:hover {
@@ -282,10 +282,7 @@ body video {
 
 
 
-html {
-  scroll-behavior: smooth;
-  /* smooth scroll to About */
-}
+
 
 /**Project Section properties**/
 .project {
@@ -300,7 +297,7 @@ html {
   height: 90vh;
   width: 100vw;
   margin: 0 auto;
-  padding: 10px;
+  /* padding: 10px; */
   /* border-radius: 25px; */
   background-color: rgba(95, 95, 95, 0.29);
 
@@ -316,21 +313,121 @@ html {
   /* soft shadow */
 }
 
-.coverBoxMain {
-  width: 80%;
+
+
+/**carousel properties**/
+
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    
+    /* adjust to your image height */
+    margin: auto;
+
+    /* border:1px solid white; */
+
+
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-item {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    /* ensures consistent height */
+    object-fit: cover;
+    /* crops nicely if aspect ratios differ */
+    border-radius: 10px;
+}
+
+.naviBtnPosition{
+  position:relative;
+  /* border:1px solid red; */
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/**KUYA GIBZ PROJECT CONTENT SECTION**/
+
+
+.flashImage{
+  width:90%;
   margin:0 auto;
-  margin-top: -5px;
-}
-
-
-.coverBox {
-
-  width: 100%;
+  border-radius: 25px;
+  /* border: 1px solid white; */
+  overflow: hidden;
 }
 
 
 
 
+.kuyagibz_Project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.project_Image{
+  width:40%;
+  margin:0 50px 0 50px;
+
+  /* border:1px solid white; */
+}
+
+.project_Content{
+  width:60%;
+  margin:0 50px 0 50px;
+  /* border:1px solid black; */
+}
 
 
 
@@ -445,6 +542,13 @@ html {
   /* smooth fade */
 }
 
+
+
+
+
+
+
+
 @media (max-wdth:485px) {
   .content {
     margin-top: 100px;
@@ -488,3 +592,24 @@ html {
 
 
 }
+
+
+@media(max-width:1000px){
+  .kuyagibz_Project{
+    display: block;
+  }
+
+  .project_Image{
+    margin:0 auto;
+  }
+
+  .project_Content{
+    margin:0 auto;
+    width: 90%;
+  }
+
+
+
+
+}
+
