@@ -71,7 +71,7 @@
 
   <!-- About Section -->
   <section id="about" class="about hidden">
-    <div class="aboutClose-Button" onclick="showSection('hero')"><b>X</b></div>
+    <!-- <div class="aboutClose-Button" onclick="showSection('hero')"><b>X</b></div> -->
     <image src="static/kuyagibz_Logo.png" width="200px;"></image>
 
     <h2>About Me</h2>
@@ -101,39 +101,116 @@
 
   <!-- Project Section -->
   <section id="project" class="project hidden">
-    <div class="aboutClose-Button" onclick="showSection('hero')"><b>X</b></div>
 
+    <!-- <div class="aboutClose-Button" onclick="showSection('hero')"><b>X</b></div> -->
+    <!--CAROUSEL-->
 
-    <div class="coverBoxMain">
-      <img src = "static/kuyagibz_album.jpg" alt = "kuiyagibz" width = "100%">
+    <div class="carousel">
+      <div class="naviBtnPosition">
+        <div class="carousel-track">
+          <div class="carousel-item">
+            <img src="static/Slide1_Branding.png" alt="Orbit Haven">
+          </div>
+          <div class="carousel-item">
+            <img src="static/Slide2_Kuyaverse.png" alt="Kuyaverse">
+          </div>
+          <div class="carousel-item">
+            <img src="static/Slide3_OrbitHaven.png" alt="Mesh Depot">
+
+          </div>
+
+        </div>
+
+        <!-- Navigation buttons -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+
+      <!-- Indicator dots -->
+      <div class="carousel-dots">
+        <span onclick="goToSlide(0)" class="dot"></span>
+        <span onclick="goToSlide(1)" class="dot"></span>
+        <span onclick="goToSlide(2)" class="dot"></span>
+
+      </div>
     </div>
 
-    <p>Kuyagibz is ready to take listeners on an electrifying ride with Next Chapter, an instrumental rock journey that speaks straight from the heart. The poster sets the tone with a powerful studio shot of the artist and his guitar, surrounded by the spirit of musical legends, while the tracklist promises an epic story told through sound—from Fearless Mind to Legacy. On June 26, 2026, this new sound and new story will be unveiled across all major platforms.</p>
-    <p>Join the celebration, feel the passion, and be part of the Next Chapter—a night where every note becomes a piece of the story.</p>
+    <!---------------------------------PROJECT CONTENT 1------------------------------->
     
-
-    <div class="coverBox">
-      <img src = "static/Kuyagibz_concert.jpg" alt = "kuiyagibz" width = "100%">
-    </div>
-
-    <div class="coverBox">
-      <img src = "static/Kuyagibz_concert.jpg" alt = "kuiyagibz" width = "100%" >
-    </div>
-
-    <div class="coverBox">
-      <img src = "static/Kuyagibz_guitar.jpg" alt = "kuiyagibz" width = "100%" >
+    <br><br><br><br>
+    <div class="flashImage">
+        <img src = "static/kg_flashImage.png" alt = "Kuyagibz Mesh Depot" width = "100%">
     </div>
 
 
-    <div class="coverBox">
-      <img src = "static/kuyagibz_clothing.jpg" alt = "kuiyagibz" width = "100%" >
+    
+    <br><br><br><br>
+    <div class="kuyagibz_Project">
+      <div class="project_Image">
+        <img src="static/kuyagibz_Logo.png" alt="kuyagibz" width="100%">
+      </div>
+      <div class="project_Content">
+        <p>Bring your worlds to life with my handcrafted 3D assets! On Gumroad, I’m releasing optimized models and modular packs designed for Unity, VRChat creators, Roblox etc. Each asset is built with crisp detail, game‑ready performance, and a touch of stylized flair — perfect for indie developers, world builders, and anyone who wants to speed up their creative workflow. Whether you’re building immersive sci‑fi environments or adding unique props to your virtual spaces, my packs are ready to drop straight into your project. Explore my growing collection today and level up your creations with KuyaGibz Mesh Depot.</p>
+        <div class="cta-button" onclick="goToGumroad()">Explore Now</div>
+      </div>
     </div>
 
+    <!---------------------------------PROJECT CONTENT 2------------------------------->
+    
+    <br><br><br><br>
+    <div class="flashImage">
+        <img src = "static/Kuyaverse_FlashImage.png" alt = "Kuyagibz Mesh Depot" width = "100%">
+    </div>
+
+
+    
+    <br><br><br><br>
+    <div class="kuyagibz_Project">
+
+      
+      
+      <div class="project_Image">
+        <img src="static/Kuyaverse_war.png" alt="kuyagibz" width="100%">
+      </div>
+
+      <div class="project_Content">
+        <p>KUYAVERSE: Building Worlds Beyond Reality  
+Founded by KuyaGibz and Kuyarhamz, KUYAVERSE is a rising indie game team driven by creativity and collaboration. Our mission is to craft immersive, cross‑platform experiences that blend action, strategy, and futuristic design. Though Meta Horizon’s VR creation tools have ended, we’re reigniting our journey through Unity and Godot — engines that empower us to build dynamic shooter‑style games for desktop, mobile, and eventually VR. KUYAVERSE stands for innovation and resilience: two creators pushing boundaries to bring players into a universe where every shot, every mission, and every world tells a story.</p>
+        <div class="cta-button" onclick="goToKuyaRhamzYt()"><span style = "font-size: 17px;">Watch for more</span></div>
+      </div>
+      
+    </div>
+<!---------------------------------PROJECT CONTENT 3------------------------------->
+<br><br><br><br>
+    <div class="flashImage">
+        <img src = "static/OrbitHaven_FlashImage.png" alt = "Kuyagibz Mesh Depot" width = "100%">
+    </div>
+
+
+<br><br><br><br>
+    <div class="kuyagibz_Project">
+
+      
+      
+      <div class="project_Image">
+        <img src="static/OrbitHaven_Logo.png" alt="kuyagibz" width="80%">
+      </div>
+
+      <div class="project_Content">
+        <p>KUYAVERSE: Building Worlds Beyond Reality  
+Founded by KuyaGibz and Kuyarhamz, KUYAVERSE is a rising indie game team driven by creativity and collaboration. Our mission is to craft immersive, cross‑platform experiences that blend action, strategy, and futuristic design. Though Meta Horizon’s VR creation tools have ended, we’re reigniting our journey through Unity and Godot — engines that empower us to build dynamic shooter‑style games for desktop, mobile, and eventually VR. KUYAVERSE stands for innovation and resilience: two creators pushing boundaries to bring players into a universe where every shot, every mission, and every world tells a story.</p>
+        <div class="cta-button" onclick="goToVrChatProfile()"><span style = "font-size: 17px;">Visit Profile</span></div>
+      </div>
+      
+    </div>
+
+<br><br><br><br>
+<hr>
     <br><br><br>
     <div class="payPal-Button" onclick="goToPaypalSupport()">Support me Via Paypal</div>
     <br>
 
-    
+
     <div class="socmed-Links">
       <img class="yt_Logo" src="static/yt_Logo.png" width=30px" onclick="goToYoutube()">&nbsp;&nbsp;&nbsp;
       <img class="ig_Logo" src="static/ig_Logo.png" width="30px" onclick="goToInstagram()">&nbsp;&nbsp;&nbsp;
@@ -146,4 +223,4 @@
 </body>
 
 
-</html>
+</html> 
