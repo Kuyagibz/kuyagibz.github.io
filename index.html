@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Gibz Portfolio | VRChat Worlds & Web Development</title>
+  <title>Kuyagibz Mesh Depot</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width = device - width, initial-scale = 1.0">
   <meta name="author" content="KuyaGibz">
@@ -34,26 +34,31 @@
   </video>
 
   <div class="overlay"></div>
-  <div class="brand-Logo">
-    <image src="static/kuyagibz_Logo.png" width="60px;"></image>
-  </div>
-  <div class="navi-Box"><!---------------Navigation Menu Section ------------->
+  <header>
+    <div class="brand-Logo">
+      <img src="static/kuyagibz_Logo.png" width="60px">
+    </div>
+    <!-- Hamburger button -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
 
+  <!-- Drawer menu -->
+
+  <nav class="drawer" id="drawerMenu">
     <ul class="navi-Menu">
-      <a href="index.html">
-        <li>Home</li>
-      </a>
+      <li><a href="index.html">Home</a></li>
       <li onclick="showSection('about')">About</li>
       <li onclick="showSection('project')">Projects</li>
-
-
-      <a href="https://kuyagibz.gumroad.com" target="_blank">
-        <li>Store</li>
-      </a>
-      <li id="nav-BuyMeDrink" onclick="goToPaypalSupport()"><img src="static/drink_icon.png" width="30px">Buy Me a Drink
+      <li><a href="https://kuyagibz.gumroad.com" target="_blank">Store</a></li>
+      <li id="nav-BuyMeDrink" onclick="goToPaypalSupport()">
+        <img src="static/drink_icon.png" width="30px"> Buy Me a Drink
       </li>
     </ul>
-  </div>
+  </nav>
+
+
+
+
   <!-- Hero Section -->
   <section id="hero" class="content active">
     <h1>Welcome to KuyaGibz Mesh Depot</h1>
@@ -136,85 +141,104 @@
     </div>
 
     <!---------------------------------PROJECT CONTENT 1------------------------------->
-    
-    <br><br><br><br>
+
+
     <div class="flashImage">
-        <img src = "static/kg_flashImage.png" alt = "Kuyagibz Mesh Depot" width = "100%">
+      <img src="static/kg_flashImage.png" alt="Kuyagibz Mesh Depot" width="100%">
     </div>
 
 
-    
-    <br><br><br><br>
+
+
     <div class="kuyagibz_Project">
       <div class="project_Image">
         <img src="static/kuyagibz_Logo.png" alt="kuyagibz" width="100%">
       </div>
       <div class="project_Content">
-        <p>Bring your worlds to life with my handcrafted 3D assets! On Gumroad, I’m releasing optimized models and modular packs designed for Unity, VRChat creators, Roblox etc. Each asset is built with crisp detail, game‑ready performance, and a touch of stylized flair — perfect for indie developers, world builders, and anyone who wants to speed up their creative workflow. Whether you’re building immersive sci‑fi environments or adding unique props to your virtual spaces, my packs are ready to drop straight into your project. Explore my growing collection today and level up your creations with KuyaGibz Mesh Depot.</p>
+        <p>Bring your worlds to life with my handcrafted 3D assets! On Gumroad, I’m releasing optimized models and
+          modular packs designed for Unity, VRChat creators, Roblox etc. Each asset is built with crisp detail,
+          game‑ready performance, and a touch of stylized flair — perfect for indie developers, world builders, and
+          anyone who wants to speed up their creative workflow. Whether you’re building immersive sci‑fi environments or
+          adding unique props to your virtual spaces, my packs are ready to drop straight into your project. Explore my
+          growing collection today and level up your creations with KuyaGibz Mesh Depot.</p>
         <div class="cta-button" onclick="goToGumroad()">Explore Now</div>
       </div>
     </div>
 
     <!---------------------------------PROJECT CONTENT 2------------------------------->
-    
-    <br><br><br><br>
+
+
     <div class="flashImage">
-        <img src = "static/Kuyaverse_FlashImage.png" alt = "Kuyagibz Mesh Depot" width = "100%">
+      <img src="static/Kuyaverse_FlashImage.png" alt="Kuyagibz Mesh Depot" width="100%">
     </div>
 
 
-    
-    <br><br><br><br>
+
+
     <div class="kuyagibz_Project">
 
-      
-      
+
+
       <div class="project_Image">
         <img src="static/Kuyaverse_war.png" alt="kuyagibz" width="100%">
       </div>
 
       <div class="project_Content">
-        <p>KUYAVERSE: Building Worlds Beyond Reality  
-Founded by KuyaGibz and Kuyarhamz, KUYAVERSE is a rising indie game team driven by creativity and collaboration. Our mission is to craft immersive, cross‑platform experiences that blend action, strategy, and futuristic design. Though Meta Horizon’s VR creation tools have ended, we’re reigniting our journey through Unity and Godot — engines that empower us to build dynamic shooter‑style games for desktop, mobile, and eventually VR. KUYAVERSE stands for innovation and resilience: two creators pushing boundaries to bring players into a universe where every shot, every mission, and every world tells a story.</p>
-        <div class="cta-button" onclick="goToKuyaRhamzYt()"><span style = "font-size: 17px;">Watch for more</span></div>
+        <p>KUYAVERSE: Building Worlds Beyond Reality
+          Founded by KuyaGibz and Kuyarhamz, KUYAVERSE is a rising indie game team driven by creativity and
+          collaboration. Our mission is to craft immersive, cross‑platform experiences that blend action, strategy, and
+          futuristic design. Though Meta Horizon’s VR creation tools have ended, we’re reigniting our journey through
+          Unity and Godot — engines that empower us to build dynamic shooter‑style games for desktop, mobile, and
+          eventually VR. KUYAVERSE stands for innovation and resilience: two creators pushing boundaries to bring
+          players into a universe where every shot, every mission, and every world tells a story.</p>
+        <div class="cta-button" onclick="goToKuyaRhamzYt()"><span style="font-size: 17px;">Watch for more</span></div>
       </div>
-      
+
     </div>
-<!---------------------------------PROJECT CONTENT 3------------------------------->
-<br><br><br><br>
+    <!---------------------------------PROJECT CONTENT 3------------------------------->
+
     <div class="flashImage">
-        <img src = "static/OrbitHaven_FlashImage.png" alt = "Kuyagibz Mesh Depot" width = "100%">
+      <img src="static/OrbitHaven_FlashImage.png" alt="Kuyagibz Mesh Depot" width="100%">
     </div>
 
 
-<br><br><br><br>
+
     <div class="kuyagibz_Project">
 
-      
-      
+
+
       <div class="project_Image">
         <img src="static/OrbitHaven_Logo.png" alt="kuyagibz" width="80%">
       </div>
 
       <div class="project_Content">
-        <p>🌌 Step into Orbit Haven — my flagship VRChat world designed for creators and dreamers alike. Built with immersive sci‑fi aesthetics and social‑friendly layouts, Orbit Haven blends modular architecture, interactive hangout zones, and atmospheric lighting to create a space that feels alive. From cozy lounges and mirror corners to branded touches like the KuyaGibz Mesh Depot assets, every detail is crafted to make visitors feel at home while exploring a futuristic hub. Optimized for smooth performance and ready for community engagement, Orbit Haven isn’t just a world — it’s a statement of creativity, a showcase of technical skill, and a launchpad for the VRChat Creator Economy.</p>
-        <div class="cta-button" onclick="goToVrChatProfile()"><span style = "font-size: 17px;">Visit Profile</span></div>
+        <p>🌌 Step into Orbit Haven — my flagship VRChat world designed for creators and dreamers alike. Built with
+          immersive sci‑fi aesthetics and social‑friendly layouts, Orbit Haven blends modular architecture, interactive
+          hangout zones, and atmospheric lighting to create a space that feels alive. From cozy lounges and mirror
+          corners to branded touches like the KuyaGibz Mesh Depot assets, every detail is crafted to make visitors feel
+          at home while exploring a futuristic hub. Optimized for smooth performance and ready for community engagement,
+          Orbit Haven isn’t just a world — it’s a statement of creativity, a showcase of technical skill, and a
+          launchpad for the VRChat Creator Economy.</p>
+        <div class="cta-button" onclick="goToVrChatProfile()"><span style="font-size: 17px;">Visit Profile</span></div>
       </div>
-      
-    </div>
-
-<br><br><br><br>
-<hr>
-    <br><br><br>
-    <div class="payPal-Button" onclick="goToPaypalSupport()">Support me Via Paypal</div>
-    <br>
-
-
-    <div class="socmed-Links">
-      <img class="yt_Logo" src="static/yt_Logo.png" width=30px" onclick="goToYoutube()">&nbsp;&nbsp;&nbsp;
-      <img class="ig_Logo" src="static/ig_Logo.png" width="30px" onclick="goToInstagram()">&nbsp;&nbsp;&nbsp;
 
     </div>
+
+
+
+    <footer>
+      <div class="payPal">
+        <div class="payPal-Button" onclick="goToPaypalSupport()">Support me Via Paypal</div>
+        <br>
+
+
+        <div class="socmed-Links">
+          <img class="yt_Logo" src="static/yt_Logo.png" width=30px" onclick="goToYoutube()">&nbsp;&nbsp;&nbsp;
+          <img class="ig_Logo" src="static/ig_Logo.png" width="30px" onclick="goToInstagram()">&nbsp;&nbsp;&nbsp;
+
+        </div>
+      </div>
+    </footer>
 
   </section>
 
@@ -222,4 +246,4 @@ Founded by KuyaGibz and Kuyarhamz, KUYAVERSE is a rising indie game team driven 
 </body>
 
 
-</html> 
+</html>
