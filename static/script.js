@@ -112,3 +112,10 @@ track.addEventListener("touchend", (e) => {
 
 // Initialize
 showSlide(currentSlide);
+
+
+function toggleMenu() {
+  const drawer = document.getElementById("drawerMenu");
+  drawer.classList.toggle("open");
+}
+
