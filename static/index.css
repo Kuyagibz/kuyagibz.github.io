@@ -264,8 +264,8 @@ body video {
   /* transform: translateY(-50%); */
   height: 90vh;
   width: 100vw;
-  margin: 0 auto;
-  padding: 10px;
+  
+  
   /* border-radius: 25px; */
   background-color: rgba(95, 95, 95, 0.29);
 
@@ -279,6 +279,15 @@ body video {
   /* subtle border */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   /* soft shadow */
+
+
+  border:1px solid white;
+}
+
+.aboutTxt{
+  width:90%;
+  margin:0 auto;
+  font-size: 24px;
 }
 
 
@@ -409,7 +418,7 @@ body video {
   border-bottom: 60px; 
   overflow: hidden;
 
-
+r
   /* border: 1px solid white; */
 }
 
