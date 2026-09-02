@@ -26,7 +26,7 @@ function goToProject(){
 }
 
 function goToKuyaRhamzYt(){
-  window.open("https://www.youtube.com/@KuyaRhamz");
+  window.open("https://www.youtube.com/@KuyagibzMeshDepot");
 }
 
 
